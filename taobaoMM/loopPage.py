@@ -22,14 +22,11 @@ def gettext(url):
 #get hyper link for tag a
 def getInfor(htmltext):
     soup = BeautifulSoup(htmltext, 'html.parser')
-    heightTag = soup.select(".mm-p-height")
-    # weightTag = soup.find('li',{'class':'mm-p-weight'})
-    # sizeTag = soup.find('li',{'class':'mm-p-size'})
-    # barTag = soup.find('li',{'class':'mm-p-bar'})
-    # shoseTag =soup.find('li',{'class':'mm-p-shose'})
-
-    print heightTag
-
+    p = soup.find_all('p')
+    p_contents = []
+    for i in p:
+        p_contents.append(i.contents[0])
+    return p_contents
 
 def main():
     url = 'https://mm.taobao.com/self/info/model_info_show.htm?user_id=631300490'
@@ -37,7 +34,9 @@ def main():
     #'/mm.taobao.com/self/info/model_info_show.htm?user_id=631300490 '
 
     html = gettext(url)
-    getInfor(html)
+    list = getInfor(html)
+    for i in list[:5]:
+        print i
 
 
 if __name__ == '__main__':

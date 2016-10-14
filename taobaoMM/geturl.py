@@ -1,8 +1,9 @@
 #/usr/bin/python
 # -*- coding:utf-8 *-
+import time
+import re
 import requests
 import urllib
-import time
 from bs4 import BeautifulSoup
 from urllib2 import HTTPError
 
@@ -19,23 +20,28 @@ def gettext(url):
     except requests.ConnectionError as e:
         return None
 
-#get hyper link for tag a
+#get name and
 def getHref(htmltext):
     soup = BeautifulSoup(htmltext, 'html.parser')
     aTag = soup.find_all('a',{'class':'lady-name'})
 
+    # key:name, valur:url id number
     infor = {}
     for i in aTag:
         i.encode('utf-8')
         k = i.string
-        v = i.get('href')
+        # url = i.get('href')
+        v = reId(i.get('href'))# filter id
         infor[k] = v
 
     for k in infor:
         print "name: %s,  url: %s \n" % (k, infor[k])
         # print k + "\t\t"+ infor[k]
 
-
+#use regular get id num form url
+def reId(url):
+    id = re.sub(r'\D','',url)
+    return id
 
 def main(page):
     url = 'https://mm.taobao.com/json/request_top_list.htm?page=' + str(page)
