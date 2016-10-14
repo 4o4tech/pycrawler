@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a198ac1-d8e8-4ff6-b6f9-2ff41bbca10a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taobaoMM/geturl.py" afterPath="$PROJECT_DIR$/taobaoMM/geturl.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taobaoMM/loopPage.py" afterPath="$PROJECT_DIR$/taobaoMM/loopPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taobaoMM/readme.md" afterPath="$PROJECT_DIR$/taobaoMM/readme.md" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,7 +18,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/crawler$requestDemo.coverage" NAME="requestDemo Coverage Results" MODIFIED="1471592842472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/crawler$getJson.coverage" NAME="getJson Coverage Results" MODIFIED="1471593950210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shanbayNews" />
-    <SUITE FILE_PATH="coverage/crawler$loopPage.coverage" NAME="loopPage Coverage Results" MODIFIED="1476424996798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/taobaoMM" />
+    <SUITE FILE_PATH="coverage/crawler$loopPage.coverage" NAME="loopPage Coverage Results" MODIFIED="1476430805297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/taobaoMM" />
     <SUITE FILE_PATH="coverage/crawler$Unittests_in_crawler.coverage" NAME="Unittests in crawler Coverage Results" MODIFIED="1466562603005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/crawler$heart.coverage" NAME="heart Coverage Results" MODIFIED="1476330157047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../practice" />
     <SUITE FILE_PATH="coverage/crawler$geturl.coverage" NAME="geturl Coverage Results" MODIFIED="1476424635511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/taobaoMM" />
@@ -40,8 +37,8 @@
       <file leaf-file-name="geturl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taobaoMM/geturl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="844">
-              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+            <state relative-caret-position="493">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
               <folding>
                 <element signature="e#39#50#0" expanded="true" />
               </folding>
@@ -52,10 +49,15 @@
       <file leaf-file-name="loopPage.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taobaoMM/loopPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="297">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <element signature="e#40#55#0" expanded="true" />
+                <element signature="e#40#54#0" expanded="true" />
+                <marker date="1476460627537" expanded="true" signature="155:179" ph="INSERT INTO taobaomodle... " />
+                <marker date="1476460627537" expanded="true" signature="155:213" ph="INSERT INTO `taobaomodle`... " />
+                <marker date="1476460627537" expanded="true" signature="155:214" ph="INSERT INTO `taobaomodle`... " />
+                <marker date="1476460627537" expanded="true" signature="155:256" ph="INSERT INTO `taobaomodle`... " />
+                <marker date="1476460627537" expanded="true" signature="271:358" ph="INSERT INTO `taobaomodle`... " />
               </folding>
             </state>
           </provider>
@@ -696,7 +698,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#40#55#0" expanded="true" />
+            <element signature="e#40#54#0" expanded="true" />
+            <marker date="1476460627537" expanded="true" signature="155:179" ph="INSERT INTO taobaomodle... " />
+            <marker date="1476460627537" expanded="true" signature="155:213" ph="INSERT INTO `taobaomodle`... " />
+            <marker date="1476460627537" expanded="true" signature="155:214" ph="INSERT INTO `taobaomodle`... " />
+            <marker date="1476460627537" expanded="true" signature="155:256" ph="INSERT INTO `taobaomodle`... " />
+            <marker date="1476460627537" expanded="true" signature="271:358" ph="INSERT INTO `taobaomodle`... " />
           </folding>
         </state>
       </provider>
@@ -830,16 +837,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/taobaoMM/getInfor.py" />
-    <entry file="file://$PROJECT_DIR$/taobaoMM/geturl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="844">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-          <folding>
-            <element signature="e#39#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taobaoMM/readme.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -848,12 +845,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/taobaoMM/geturl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <folding>
+            <element signature="e#39#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/taobaoMM/loopPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="297">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="e#40#55#0" expanded="true" />
+            <element signature="e#40#54#0" expanded="true" />
+            <marker date="1476460627537" expanded="true" signature="155:179" ph="INSERT INTO taobaomodle... " />
+            <marker date="1476460627537" expanded="true" signature="155:213" ph="INSERT INTO `taobaomodle`... " />
+            <marker date="1476460627537" expanded="true" signature="155:214" ph="INSERT INTO `taobaomodle`... " />
+            <marker date="1476460627537" expanded="true" signature="155:256" ph="INSERT INTO `taobaomodle`... " />
+            <marker date="1476460627537" expanded="true" signature="271:358" ph="INSERT INTO `taobaomodle`... " />
           </folding>
         </state>
       </provider>
