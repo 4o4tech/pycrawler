@@ -1,7 +1,7 @@
 #/usr/bin/python
 # -*- coding:utf-8 *-
-import time
 import re
+import time
 import requests
 import urllib
 from bs4 import BeautifulSoup
