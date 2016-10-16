@@ -71,15 +71,5 @@ def main():
     #'/mm.taobao.com/self/info/model_info_show.htm?user_id=631300490 '
 
 
-# sql = 'INSERT INTO `taobaomodle` (`name`,`height`,`weight`,`size`,`bar`, `shose`) VALUES (%s,%s,%s,%s,%s,%s)'
-# sql_tmp = 'INSERT INTO `taobaomodle` (`startip`,`endip`,`country`,`local`) VALUES (%s, %s, %s, %s)'
-# values = [(16890112, 16891391, "泰国", "曼谷"), (16891392, 16891647, "泰国", "如果硅农"),
-#                   (16891648, 16892159, "泰国", "加拉信府")]
-# connect sql
-# db1 = connect_mysql()
-# print db1.execute(sql), db1.lastrowid
-# print db1.executemany(sql, values), db1.lastrowid
-
-
 if __name__ == '__main__':
     main()

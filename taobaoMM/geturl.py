@@ -52,7 +52,7 @@ def main(page):
     #     print "name: %s,  url: %s \n"%(k,v)
 
 if __name__ =='__main__':
-    for page in range(1,3):
+    for page in range(1,2):
         main(page)
         time.sleep(0.5)
 ''' the code still have the encode problem, can't show the chinese at the output'''
