@@ -21,13 +21,18 @@ def gettext(url):
 
 #get hyper link for tag a
 def getInfor(htmltext):
-    soup = BeautifulSoup(htmltext, 'html.parser')
-    p = soup.find_all('p')
     contents = []
+    soup = BeautifulSoup(htmltext, 'html.parser')
+
+    span = soup.find_all('span')
+    contents.append(span[1]) # add name in list
+
+    p = soup.find_all('p')
     for i in p[:5]:
-        contents.append(i.contents[0]) # height weight  size  bar  shose  img_url
+        contents.append(i.contents[0]) # add height,weight,size,bar,hose in list
+
     img_url = soup.find('img').get('src') #img url
-    contents.append(img_url)
+    contents.append(img_url) # add img_url list
     return contents
 
 '''
@@ -63,11 +68,8 @@ def main():
     for i in id:
         url = 'https://mm.taobao.com/self/info/model_info_show.htm?user_id=' + str(i)
         html = gettext(url)
-        list = getInfor(html)
-        print list
-    
-        # for i in list:
-        #     print i
+        list = getInfor(html) # list is information list
+
     #'/mm.taobao.com/self/info/model_info_show.htm?user_id=631300490 '
 
 

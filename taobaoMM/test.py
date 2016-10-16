@@ -24,7 +24,7 @@ def db_pwd():
 
 
 
-def connect_mysql(db_host="45.78.7.228", user="root",passwd="zjz5278"):
+def connect_mysql(db_host, user,passwd):
     db = "practice"
     charset = "utf8"
     try:
@@ -58,7 +58,7 @@ def main():
     user = db[1]
     passwd = db[2]
 
-    # connect_mysql(db_host,user,passwd)
+    connect_mysql(db_host,user,passwd)
 
 
     print "finished"
