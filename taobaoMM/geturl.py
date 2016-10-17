@@ -24,7 +24,6 @@ def gettext(url):
 def getHref(htmltext):
     soup = BeautifulSoup(htmltext, 'html.parser')
     aTag = soup.find_all('a',{'class':'lady-name'})
-
     # key:name, valur:url id number
     infor = {}
     for i in aTag:
@@ -45,9 +44,10 @@ def reId(url):
 
 def main(page):
     url = 'https://mm.taobao.com/json/request_top_list.htm?page=' + str(page)
-    # print url s
     htmltext = gettext(url)
     infor = getHref(htmltext)
+
+
     # for k,v in infor:
     #     print "name: %s,  url: %s \n"%(k,v)
 
@@ -55,5 +55,5 @@ if __name__ =='__main__':
     for page in range(1,2):
         main(page)
         time.sleep(0.5)
-''' the code still have the encode problem, can't show the chinese at the output'''
+
  

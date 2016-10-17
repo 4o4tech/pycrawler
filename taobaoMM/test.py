@@ -4,8 +4,6 @@ import MySQLdb
 import os
 
 
-
-
 '''
   try:
         conn = MySQLdb.connect(host=db_host, user=user, passwd=passwd, db=db, charset=charset)
@@ -19,8 +17,12 @@ def db_pwd():
     path = os.path.abspath('/home/jimze/db.txt')
     # path = os.path.abspath('g:/db.txt')
     dbFile = open(path)
-    dbInf= dbFile.readlines()
-    return dbInf
+    db= dbFile.readlines()
+
+    db_host = db[0].strip()
+    user = db[1].strip()
+    passwd = db[2].strip()
+    return (db_host,user,passwd)
 
 
 
@@ -34,8 +36,8 @@ def connect_mysql(db_host, user,passwd):
         cur = conn.cursor()
 
         value = ['崔辰辰', '168.0', '45.0', '82-59-86', '32B', '37码', 'i1/T1S35PXpXeXXb1upjX.jpg']
+        #'崔辰辰','168CM','45.0KG','82-59-86','32B','37码','//gtd.alicdn.com/imgextra/i1/T1S35PXpXeXXb1upjX.jpg'
         cur.execute(sql, value)
-
         # cur.executemany(sql,value)
 
         conn.commit()
@@ -53,15 +55,11 @@ def connect_mysql(db_host, user,passwd):
 
 def main():
 
-    db = db_pwd()
-    db_host = db[0]
-    user = db[1]
-    passwd = db[2]
+    (x,y,z) = db_pwd()
 
-    connect_mysql(db_host,user,passwd)
+    connect_mysql(x,y,z)
 
-
-    print "finished"
+    print "Down"
 
 
 if __name__ == '__main__':
