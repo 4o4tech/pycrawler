@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 import MySQLdb
-
+import pymysql
 import os
 
 
@@ -27,10 +27,10 @@ def db_pwd():
 
 
 def connect_mysql(db_host, user,passwd):
-    db = "practice"
+    db = "mydb"
     charset = "utf8"
     try:
-        conn = MySQLdb.connect(host=db_host, user=user, passwd=passwd, db=db, charset=charset)
+        conn = pymysql.connect(host=db_host, user=user, passwd=passwd, db=db, charset=charset)
         sql = "insert into taobaomodle values (%s,%s,%s,%s,%s,%s,%s)"
 
         cur = conn.cursor()

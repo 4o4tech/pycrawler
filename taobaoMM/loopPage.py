@@ -2,6 +2,7 @@
 # -*- coding:utf-8 *-
 import re
 import os
+import pymysql
 import MySQLdb
 import requests
 import urllib
@@ -67,10 +68,11 @@ def db_pwd():
 
 
 def connect_mysql(db_host, user,passwd,list):
-    db = "practice"
+    db = "mydb"
     charset = "utf8"
+
     try:
-        conn = MySQLdb.connect(host=db_host, user=user, passwd=passwd, db=db, charset=charset,port=3306)
+        conn = pymysql.connect(host=db_host, user=user, passwd=passwd, db=db, charset=charset,port=3306)
         sql = "insert into taobaomodle values (%s,%s,%s,%s,%s,%s,%s)"
 
         cur = conn.cursor()
@@ -84,6 +86,8 @@ def connect_mysql(db_host, user,passwd,list):
         cur.close()
         conn.close()
 
+        return 'store: ' + value[0]
+
         # values = []
         # for i in range(20):
         #     values.append((i, 'hi rollen' + str(i)))
@@ -92,23 +96,17 @@ def connect_mysql(db_host, user,passwd,list):
     except MySQLdb.Error, e:
         print  "Mysql Error %d : %s" % (e.args[0],e.args[1])
 
-def main():
+def main(id):
+
     id = [37448401,631300490]
     list = []
+    (x, y, z) = db_pwd()
     for i in id:
         url = 'https://mm.taobao.com/self/info/model_info_show.htm?user_id=' + str(i)
         html = gettext(url)
         list = getInfor(html) # list is information list
 
-
-        (x, y, z) = db_pwd()
-        connect_mysql(x, y, z,list)
-
-        # print list
-
-
-
-    #'/mm.taobao.com/self/info/model_info_show.htm?user_id=631300490 '
+        print connect_mysql(x, y, z,list)
 
 
 if __name__ == '__main__':
