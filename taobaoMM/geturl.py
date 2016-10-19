@@ -49,6 +49,9 @@ def main(page):
     htmltext = gettext(url)
     ID = getHref(htmltext)
 
+    connect_mysql(ID)
+
+    '''
     list = []
     (x, y, z) = db_pwd()
     for i in ID:
@@ -57,7 +60,7 @@ def main(page):
         list = getInfor(html)  # list is information list
 
         print connect_mysql(x, y, z, list)
-
+    '''
 
     # for k,v in infor:
     #     print "name: %s,  url: %s \n"%(k,v)
@@ -67,4 +70,4 @@ if __name__ =='__main__':
     # 16/10/18 get the page 1 to 9 (1,10)
     for page in range(1,10):
         main(page)
-        time.sleep(0.5)
+        time.sleep(1)
