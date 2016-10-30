@@ -31,7 +31,13 @@ def getInfor(htmltext):
 
     p = soup.find_all('p')
     for i in p[:5]:
-        contents.append(i.contents[0]) # add height,weight,size,bar,hose in list
+        # print i
+        try:
+            str = i.contents[0]
+        except:
+            pass
+
+        contents.append(str) # add height,weight,size,bar,hose in list
 
     contents = filterNum(contents)
 
@@ -94,7 +100,7 @@ def connect_mysql(id):
         #     values.append((i, 'hi rollen' + str(i)))
         #
         # cur.executemany('insert into test values(%s,%s)', values)
-    except MySQLdb.Error, e:
+    except pymysql.Error, e:
         print  "Mysql Error %d : %s" % (e.args[0],e.args[1])
 
 def getList(id):
@@ -108,7 +114,7 @@ def getList(id):
 
 def main():
 
-    # id = [37448401, 631300490]
+    # id = [33197951,37448401, 631300490]
     # print getList(id)
     connect_mysql(id)
 

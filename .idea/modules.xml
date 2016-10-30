@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../EmotionAPI/.idea/EmotionAPI.iml" filepath="$PROJECT_DIR$/../EmotionAPI/.idea/EmotionAPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/crawler.iml" filepath="$PROJECT_DIR$/.idea/crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../data_vs/.idea/data_vs.iml" filepath="$PROJECT_DIR$/../data_vs/.idea/data_vs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../practice/.idea/practice.iml" filepath="$PROJECT_DIR$/../practice/.idea/practice.iml" />
     </modules>
   </component>
 </project>
