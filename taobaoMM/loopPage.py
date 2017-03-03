@@ -62,8 +62,8 @@ img_url  //gtd.alicdn.com/imgextra/i1/T1S35PXpXeXXb1upjX.jpg
 
 
 def db_pwd():
-    path = os.path.abspath('/home/jimze/db.txt')
-    # path = os.path.abspath('g:/db.txt')
+    #path = os.path.abspath('/home/jimze/db.txt')
+    path = os.path.abspath('f:/db.txt')
     dbFile = open(path)
     db= dbFile.readlines()
 
